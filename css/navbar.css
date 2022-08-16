@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #fefefe;
+
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
+.logotxt {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: #5E17EB;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #fefefe;
+    background-color: #5E17EB;
+}
+
+.nav-bar ul li a.active {
+    color: #fefefe;
+    background-color: #5E17EB;
+}
+
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding:0 50px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    header {
+        padding:0 30px;
+}
+}
+
+
+@media only screen and (max-width: 900px) {
+    .logo{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 5px;
+        background-color: #5E17EB;
+        margin: 6px 0 ;
+    }
+
+    .nav-bar{
+        height: 0px;
+        border: solid 1px #5E17EB;
+        border-radius: 25px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #fefefe;
+        transition: 0.3s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 450px;
+
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}
