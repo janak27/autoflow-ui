@@ -84,9 +84,7 @@ header {
 
 
 @media only screen and (max-width: 900px) {
-    .logo{
-        display: none;
-    }
+
     .hamburger {
         display: block;
         cursor: pointer;
