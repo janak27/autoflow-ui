@@ -36,6 +36,9 @@ header {
     font-size: 28px;
     font-weight: bold;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hamburger {
