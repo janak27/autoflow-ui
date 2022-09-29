@@ -7,37 +7,31 @@
         <title>navbar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="../img/My project 100x100.png" alt="">
-                <div class="logotxt">AutoFlow</div>
-            </div>
-            
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <span class="logo">
+                    
+                    <a href="#"><div class="logo-img"><img src="/img/logo.png" alt=""></div></a></span>
+                    <div class="menu">
+                        <ul class="nav-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
 
-            <nav class="nav-bar">
-                
-                <ul>
-                    <li><a href="" class="active">Home</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Sign Up</a></li>
-                </ul>
-            </nav>
-        </header>
-        <script>
-            hamburger = document.querySelector('.hamburger');
-            hamburger.onclick = function () { 
-                navBar = document.querySelector(".nav-bar");
-                navBar.classList.toggle("active");
-            }
-        </script>
+                    <div class="sign-up">
+                        <div class="login"><a href="#">Log-in</a></div>
+                        <div class="sign"><a href="#">sign up</a></div>
+                    </div>
+            </div>
+        </nav>
+    </header>
     </body>
 </html>
