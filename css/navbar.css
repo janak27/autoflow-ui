@@ -54,7 +54,7 @@ nav .nav-bar{
     position: relative;
     height: 100%;
     /* max-width: 1024px; */
-    width: 100%;
+    width: 93%;
     background-color: var(--nav-color);
     margin: 0 auto;
     padding: 0px 5px;
@@ -224,7 +224,6 @@ nav .nav-bar .logo a{
 }
 
 footer{
-	position: fixed;
 	bottom: 0;
 }
 
@@ -254,7 +253,7 @@ footer{
 /* Footer left */
 
 .footer-distributed .footer-left{
-	width: 30%;
+	width: 33%;
 }
 
 .footer-distributed h3{
@@ -266,7 +265,8 @@ footer{
 /* The company logo */
 
 .footer-distributed .footer-left img{
-	width: 30%;
+	width: 50%;
+    cursor: pointer;
 }
 
 .footer-distributed h3 span{
@@ -405,8 +405,3 @@ footer{
 	}
 
 }
-
-
-
-
-
