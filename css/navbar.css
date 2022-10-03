@@ -167,7 +167,7 @@ nav .nav-bar .logo a{
 
     .nav-bar .adjust{
         display: block;
-        color: var(--body-color)
+        color: var(--text-color);
      }
      
    
