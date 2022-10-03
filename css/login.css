@@ -10,12 +10,12 @@
     box-sizing: border-box;
     transition: all 0.5s ease;;
 }
-body {
+/* body {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 :root{
   --body-color: #FAFAFA;
@@ -26,13 +26,17 @@ body {
   --search-text: #050505;
 }
 .container {
-  position: relative;
-  border: 3px solid var(--text-color);
+  position: absolute;
+  /* border: 3px solid var(--text-color); */
   max-width: 370px;
   width: 100%;
   padding: 50px;
   border-radius: 30px;
   background-color: #fff;
+  border:none;
+  box-shadow:rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+
+
 }
 .container header {
   font-size: 22px;
